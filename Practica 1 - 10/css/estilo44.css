@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #333;
+    color: crimson;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    /*padding-bottom: 30px; si quieres que quede un poco de espacio abajo , ponle mejor esta linea , no le pongas height, este paddiga se configura */
+    background-color: lightgreen;
+}
+.box-children{
+    width: 50%;
+    height: 50%;
+    background-color: lightseagreen;
+}

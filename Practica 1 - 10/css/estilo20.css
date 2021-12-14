@@ -1,0 +1,17 @@
+body {
+    background-color: #333;
+    color: #fff;   
+}
+.block {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+}
+.inline {
+    background-color: lightsalmon;
+    color:  inherit;
+    width: 200px;
+    height: 200px;
+}
+/* CUANDO QUIERES ANCHAR Y AGRANDAR LA ETIQUETA "A" ESTA NO SE VA A PODER POR QUE 
+ES "A" OSEA DE LINK , SERIA DE ACUERDO A SU TEXTO SU TAMAÑO */

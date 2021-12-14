@@ -1,0 +1,42 @@
+/* SELECTORES */
+
+/* 
+    SELECTORES SIMPLES 
+        SELECTORES ELEMENTALES 
+            SELECTOR UNIVERSAL -> *  
+            SELECTOR DE TIPO O ETIQUETA -> NOMBRE DE LA ETIQUETA
+        SELECTORES DE ATRIBUTO
+            id -> id del elemento
+            clase -> clases de elementos
+            otros atributos
+                [href] <- traducido es a [atributo]
+                [atributo=valor]
+                [atributo^=valor] -> todo los que empiece con el nombre de valor[empiece literal]
+                [atributo*=valor] -> todo los que esten en medio con el nombre de valor[ literal]
+                [atributo$=valor] -> todo los que termine con el nombre de valor[terminen literal]
+                [atributo|=valor] -> da lo mismo si tiene o no tiene el nombre, pero tiene que tener el nombre inicial 
+    SELECTORES COMPUESTOS 
+        SELECTORES AGRUPADOS
+        SELECTORES COMBINADOS
+        PSEUDOCLASES - PSEUDOELEMENTOS
+*/
+
+[href] {
+    background-color: mediumorchid;
+}
+[href="https://jkanime.net/"] {
+    background-color: orange;
+}
+[href^="www"] {
+    background-color: peru;
+
+}
+[href*="ube"] {
+    background-color: purple;
+}
+[href$="net"] {
+    background-color: black;
+}
+[lang|="en"] {
+    background-color: rgb(125, 51, 24);
+}

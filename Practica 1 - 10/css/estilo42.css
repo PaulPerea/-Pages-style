@@ -1,0 +1,49 @@
+/*
+    Las medidas en CSS se puede agrupar en 2 grupos, absotulas y relativas.
+
+    Las medidas absolutas NO CAMBIAN y siempre mantendran su tamaño independientemente
+    del dispositivo o la interaccion del usuario.
+
+    La mas usada es px (pixeles cuya medida) es 1/96 de 1in, pero existen otras como:
+        cm(centimetros) -> 1cm = 96px/2,54
+        mm(milimetros) -> 1mm = 1/10 de 1cm
+        Q(cuatro de los milimetros) -> 1Q = 1/40 de 1cm
+        in(inches, pulgadas) -> 1in = 2,54cm = 96px
+        pc(picas) -> 1pc = 1/16 de 1in
+        pt(puntos) -> 1pt = 1/72 de 1in
+
+    Las medidas relativas SIEMPRE depende de un contexto son las que se recomiendan 
+    utilizar en la gran mayoria de las ocaciones por que nos van a permitir que todas
+    los elementos escalen proporcionalmente.
+        ex -> Altura x de la fuente del elemento
+        ch -> La medida del ancho del glifo "0" de la letra del elemento.
+        lh -> Altura de la linea de elemento.
+
+    rem -> Corresponde a la medida de la "m" de la raiz del 
+    documento (html).
+    em -> Corresponde l la medida de la "m" del contexto donde
+    nos encontramos.
+
+    El estandar del tamaño de fuente por defecto en la raiz del
+    documento es 16px y NO ES RECOMENDABLE MODIFICARLO.
+
+    Nota: Tanto "em" como "rem" se calcula es ba a la 
+    propiedad font-size(tamaño de fuente)
+*/
+
+body{
+    background-color: #333;
+    color: lightpink;
+}
+.title{
+    font-size: 3rem ;
+}
+.link{
+    background-color: lightblue;
+    color: black;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 150px;
+    border-radius: 0.5em;
+    font-size: 1em;
+}

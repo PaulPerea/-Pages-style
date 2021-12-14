@@ -1,0 +1,32 @@
+/*
+    Nota:
+        si quieres que se vea el 100% de por ejemplo el width, lo va a ser sin 
+        problemas , pero si quieres mover ese elemento y lo quieres mover afuera del 
+        contenido, pues se puede hacer si, pero se ve feo, pero si quieres que 
+        salta bien, ponle auto, entonces se vera como si el elemento este salido del contenedor
+        pero la parte de afuera del contenido no se visualizara , pero aun estara afuera , y lo 
+        de adentro se vera como si estuviera afuera, claro, todo esto se puede si le dar margin al
+        elemento, o position tambien creo.
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #333;
+    color: crimson;
+}
+.box{
+    width: auto;
+    height: 250px;
+    margin: 0 50px;
+    background-color: lightgreen;
+}
+.box-children{
+    width: auto;
+    height: 25%;
+    margin-left: 100px;
+    background-color: lightseagreen;
+}

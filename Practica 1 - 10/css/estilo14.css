@@ -1,0 +1,42 @@
+/* ¿COMO FUNCIONA CSS?
+
+Especificidad -> Establece como se especifico en un selector para saber que estilo aplicar 
+                El calculo se realiza de la siguiente formula
+
+Cascada -> Funciona siempre que la especificidad sobre el elemento sea la misma
+Herencia
+
+    Nota :
+        Etiquetas y pseudoelementos      001
+        Clases, atributos y pseudoclases 010
+        id                               100
+        Estilos en linea                 1000
+        !important                       GANA A TODOS Y DICEN QUE NO SE USA NUNCA 
+*/
+
+
+/* h1 {
+    background-color: red;
+}
+.title {
+    background-color: blue;
+}
+#title {
+    background-color: green;
+}
+h1.title {
+    background-color: yellow;
+}
+h1#title {
+    background-color: teal;
+}
+h1.title#title {
+    background-color: tomato;
+}
+ */
+
+/* SOLO DARLE UNA CLASE EN VEZ DE TODO ESO */
+
+.title {
+    background-color: teal;
+}

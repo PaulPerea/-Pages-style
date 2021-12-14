@@ -1,0 +1,45 @@
+/*
+    posicion sticky
+
+    el tamaño depende del div donde esta el contendio, por ejemplo
+    no es lo mismo , agrandar el header y no es lo mismo agrandar el contenido
+    del header, si quieres que funcione la animacion, agranda el header y ponle un
+    tamaño menos al contenido del header
+
+    el overflow : hidden; ten cuidado con eso, por que si lo pones en el header
+    no se mostrara la animacion.
+
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    margin: 0;
+}
+.header{
+    text-align: center;
+    /* padding: 25px 0; */
+    background-color: lightcyan;
+    color: blue;
+    /* position: sticky;
+    top: 0;
+    width: 100%;
+    height: 400px; */
+    height: 400px;
+    /* overflow: hidden; */
+}
+/* .menu{
+    position: sticky;
+    top: 0;
+} */
+article{
+    outline: 3px solid red;
+
+}
+.article-title{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    margin: 0;
+}

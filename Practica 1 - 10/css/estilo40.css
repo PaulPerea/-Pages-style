@@ -1,0 +1,71 @@
+/*
+    El stacking context o el contexto de apilamiento es el espacio 
+    donde nuestros elementos se van a ir apilando para que unos
+    queden por detras y otros por delante 
+    
+    El orden del stacking context es:(de delante a atras):
+        Elementos posicionados con un z-index de 1 o más
+        Elementos posicionados sin un z-index declarado (o z-index:auto) osea que esta por encima 
+        Elementos no posicionados
+        Elementos con z-index negativo
+
+    Nota:
+        Si quieres que sobresalga o que este delante, solo ponle una posicion
+--------------------------------------------------------------------------------------------
+Clase 41:
+
+    Ordenar las propiedades es importante, no existe ninguna norma ni especificacion 
+    sobre como hacerlo, pero la mayoria de expertos coinciden en los mismos puntos.
+
+    1 - Propiedades de posicionamiento
+    2 - Propiedades de box model - osea el tamaño
+    3 - Propiedades de texto
+    4 - Propiedades visuales(color, borde ,background...)
+    5 - El resto
+*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #333;
+}
+.box-1{
+    background-color: lightgreen;
+    position: relative;
+    z-index: 1;
+}
+.container{
+    background-color: lightskyblue;
+    margin-top: -50px;
+    position: f;
+}
+.text{
+    margin: 0;
+    margin-top: -40px;
+}
+.title{
+    margin: 0;
+    background-color: #ccc;
+    position: relative;
+    z-index: 2;
+    opacity: 0.99;
+}
+.box-2{
+    background-color: lightpink;
+    margin-top: -50px;
+    /* position: relative; */
+    margin-top: -50px;
+
+}
+.box-3{
+    background-color: lightskyblue;
+}
